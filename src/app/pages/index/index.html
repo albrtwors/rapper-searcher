@@ -1,0 +1,14 @@
+<div class="flex flex-col gap-3 mt-30 p-5">
+    <h1 class="text-3xl font-bold">Buscador de raperos</h1>
+
+    <form class="flex flex-col gap-3" (submit)="onSubmit($event)">
+        <input name="name" class="shadow-lg rounded-lg p-3" placeholder="busca un rapero">
+        <button class="bg-sky-600 text-white p-3 rounded-lg">Submit</button>
+    </form>
+
+    @if(message() != ''){
+    <div class="font-bold">
+        {{message()}}
+    </div>
+    }
+</div>
