@@ -5,7 +5,7 @@ import { ChatGroq } from "@langchain/groq";
 })
 export class LangChain {
 
-  poderosisimo = process.env['GROQ_API_KEY']
+  poderosisimo = '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'
   model: any
 
   sayHello() {
